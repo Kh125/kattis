@@ -1,0 +1,16 @@
+tc = input().split(' ')
+tc = list(map(int,tc))
+cur = 0
+gp_count = 0
+for i in range(tc[1]):
+  inp = input().split(' ')
+  if inp[0] == 'enter':
+    if tc[0] >= cur + int(inp[1]):
+      cur = cur+int(inp[1])
+    else:
+      gp_count += 1
+  else:
+    cur = cur - int(inp[1])
+
+
+print(gp_count)
