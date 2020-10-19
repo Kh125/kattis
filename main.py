@@ -1,11 +1,10 @@
-
-tc = int(input())
+test_case = int(input())
 uni = []
 team = []
-for i in range(tc):
-  a,b = input().split(' ')
-  uni.append(a)
-  team.append(b)
+for i in range(test_case):
+  inp = input().split(' ')
+  uni.append(inp[0])
+  uni.append(inp[1])
 
-for i in range(tc):
-  print(uni[i],'*',team[i])
+for i in range(test_case):
+  print(uni[i],'-->',team[i])
